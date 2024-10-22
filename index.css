@@ -25,3 +25,7 @@
 input {
   margin: 3px 10px;
 }
+
+.brand {
+  color: rgb(0, 255, 110);
+}
