@@ -1,9 +1,9 @@
 function submitQuiz() {
   const answers = {
-    q1: "HTML",
-    q2: "Язык стилей",
-    q3: "Кот",
-    q4: "Мантеш",
+    q1: "Суши",
+    q2: "Пицца",
+    q3: "Картошка фри",
+    q4: "Шаурма",
   };
 
   let score = 0;
