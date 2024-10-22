@@ -1,0 +1,17 @@
+@import url("https://fonts.googleapis.com/css2?family=DynaPuff:wdth,wght@75..100,700&display=swap");
+
+.NaFretto {
+  font-family: "DynaPuff", system-ui;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+
+  -webkit-text-stroke: 2px black;
+
+  /* border: 1px solid black; */
+  color: yellow;
+}
+
+.question {
+  color: white;
+}

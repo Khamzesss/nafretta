@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./index.css" />
+    <title>NaFretta</title>
+    <style>
+      body {
+        background-image: url(./img/36899.jpg);
+        font-family: Arial, sans-serif;
+        margin: 20px;
+      }
+      h1 {
+        text-align: center;
+      }
+      .question {
+        margin-bottom: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>
+      <img
+        src="./img/Picsart_24-10-22_10-51-09-888.png"
+        alt="NaFretta"
+        width="90px"
+        height="80px"
+      />
+    </h1>
+    <form id="quizForm">
+      <div class="question">
+        <p>1. Какой язык является основным для создания веб-страниц?</p>
+        <label><input type="radio" name="q1" value="HTML" /> HTML</label><br />
+        <label><input type="radio" name="q1" value="CSS" /> CSS</label><br />
+        <label
+          ><input type="radio" name="q1" value="JavaScript" /> JavaScript</label
+        ><br />
+      </div>
+
+      <div class="question">
+        <p>2. Что такое CSS?</p>
+        <label
+          ><input type="radio" name="q2" value="Язык разметки" /> Язык
+          разметки</label
+        ><br />
+        <label
+          ><input type="radio" name="q2" value="Язык стилей" /> Язык
+          стилей</label
+        ><br />
+        <label
+          ><input type="radio" name="q2" value="Язык программирования" /> Язык
+          программирования</label
+        ><br />
+      </div>
+
+      <div class="question">
+        <p>3. Какой элемент HTML используется для создания ссылок?</p>
+        <label><input type="radio" name="q3" value="Лого" /> Лого</label><br />
+        <label><input type="radio" name="q3" value="Тип" />Тип</label><br />
+        <label><input type="radio" name="q3" value="Кот" /> Кот</label><br />
+      </div>
+
+      <div class="question">
+        <p>4. Какой тег в HTML используется для отображения изображения?</p>
+        <label><input type="radio" name="q4" value="Гиро" /> Гиро</label><br />
+        <label><input type="radio" name="q4" value="Мантеш" /> Мантеш</label
+        ><br />
+        <label><input type="radio" name="q4" value="Донар" /> Донар</label
+        ><br />
+      </div>
+
+      <button type="button" onclick="submitQuiz()">Проверить</button>
+    </form>
+
+    <div id="result" style="margin-top: 20px"></div>
+
+    <script src="./index.js"></script>
+  </body>
+</html>
