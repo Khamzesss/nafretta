@@ -1,8 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=DynaPuff:wdth@87.5&family=Open+Sans:wght@600&display=swap");
+
 .question {
   border: 3px solid yellow;
   border-radius: 16px;
   color: white;
+  margin-top: 5px;
 }
 
 #result {
@@ -10,6 +12,7 @@
 }
 
 .questionp {
+  margin: 8px 10px;
   font-family: "Open Sans", sans-serif;
   font-optical-sizing: auto;
   font-weight: 600;
@@ -17,4 +20,8 @@
   font-variation-settings: "wdth" 100;
   color: white;
   -webkit-text-stroke: 0.5px yellow;
+}
+
+input {
+  margin: 3px 10px;
 }
