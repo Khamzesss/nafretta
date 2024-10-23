@@ -78,12 +78,26 @@ button {
   margin-top: 5px;
   animation: blink 2.3s infinite;
 }
-.description {
-  text-align: center;
-  color: gold;
-}
 
 .description img {
   display: block;
   margin: 0 auto;
+}
+.pet {
+  font-size: 22px;
+  color: #4caf50;
+  text-shadow: 1px 1px 2px yellow;
+  animation: color-change 2s infinite;
+}
+
+@keyframes color-change {
+  0% {
+    color: yellow;
+  }
+  50% {
+    color: #ffffff;
+  }
+  100% {
+    color: yellow;
+  }
 }
