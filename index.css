@@ -72,18 +72,6 @@ button {
   cursor: pointer;
 }
 
-@keyframes blink {
-  0% {
-    border-color: yellow;
-  }
-  50% {
-    border-color: transparent;
-  }
-  100% {
-    border-color: yellow;
-  }
-}
-
 button {
   border: 3px solid yellow;
   border-radius: 16px;
