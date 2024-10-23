@@ -60,3 +60,33 @@ input[type="radio"] {
 input[type="radio"]:checked {
   background-color: yellow;
 }
+
+button {
+  background-color: transparent;
+
+  color: gold;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+@keyframes blink {
+  0% {
+    border-color: yellow;
+  }
+  50% {
+    border-color: transparent;
+  }
+  100% {
+    border-color: yellow;
+  }
+}
+
+button {
+  border: 3px solid yellow;
+  border-radius: 16px;
+  margin-top: 5px;
+  animation: blink 2.3s infinite;
+}
