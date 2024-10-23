@@ -1,92 +1,123 @@
-@import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=DynaPuff:wdth@87.5&family=Open+Sans:wght@600&display=swap");
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./index.css" />
+    <link rel="icon" href="./img/Picsart_24-10-22_10-51-09-888.png" />
+    <title>NaFretta</title>
+    <style>
+      body {
+        background-image: url(./img/images.jpg);
+        font-family: Arial, sans-serif;
+        margin: 20px;
+      }
+      h1 {
+        text-align: center;
+      }
+      .question {
+        margin-bottom: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>
+      <img
+        src="./img/Picsart_24-10-22_10-51-09-888.png"
+        alt="NaFretta"
+        width="90px"
+        height="80px"
+      />
+    </h1>
+    <form id="quizForm">
+      <div class="question">
+        <p class="questionp">
+          1. Что за блюдо, рис и рыба вкусное, витаминами полезное?
+        </p>
+        <label><input type="radio" name="q1" value="Креветки" /> Креветки</label
+        ><br />
+        <label><input type="radio" name="q1" value="Суши" /> Суши</label><br />
+        <label><input type="radio" name="q1" value="Буррито" /> Буррито</label
+        ><br />
+      </div>
 
-@keyframes blink {
-  0% {
-    border-color: yellow;
-  }
-  50% {
-    border-color: transparent;
-  }
-  100% {
-    border-color: yellow;
-  }
-}
+      <div class="question">
+        <p class="questionp">
+          2. Что-то, что начинается на букву "п" и принято есть с удовольствием
+          вместе с друзьями в круглом виде?
+        </p>
+        <label><input type="radio" name="q2" value="Донар" /> Донар</label
+        ><br />
+        <label
+          ><input type="radio" name="q2" value="Гамбургер" /> Гамбургер</label
+        ><br />
+        <label><input type="radio" name="q2" value="Пицца" /> Пицца </label
+        ><br />
+      </div>
 
-.question {
-  border: 3px solid yellow;
-  border-radius: 16px;
-  color: white;
-  margin-top: 5px;
-  animation: blink 2.3s infinite;
-}
+      <div class="question">
+        <p class="questionp">
+          3. Какое блюдо из картофеля можно найти в фастфуде, которое обычно
+          подается в виде длинных ломтиков, обильно посыпано специями и жарено
+          до хрустящей золотистой корочки?
+        </p>
+        <label
+          ><input type="radio" name="q3" value="Картошка фри" /> Картошка
+          фри</label
+        ><br />
+        <label
+          ><input
+            type="radio"
+            name="q3"
+            value="Картошка
+          по-деревенски"
+          />
+          Картошка по-деревенски</label
+        ><br />
+        <label
+          ><input
+            type="radio"
+            name="q3"
+            value="Жаренная
+          картошечка"
+          />
+          Жаренная картошечка</label
+        ><br />
+      </div>
 
-#result {
-  color: white;
-}
+      <div class="question">
+        <p class="questionp">
+          4. Что это за блюдо, которое часто подают в лаваше с мясом, овощами и
+          соусом, и является популярным уличным перекусом во многих странах?
+        </p>
+        <label><input type="radio" name="q4" value="Крылышки" /> Крылышки</label
+        ><br />
+        <label><input type="radio" name="q4" value="Наггетсы" /> Наггетсы</label
+        ><br />
+        <label><input type="radio" name="q4" value="Шаурма" /> Шаурма</label
+        ><br />
+      </div>
+      <div class="question">
+        <p class="questionp">5. Какой фастфуд-ресторан самый лучший в мире?</p>
+        <label
+          ><input type="radio" name="q5" value="Забегаловка" />
+          Забегаловка</label
+        ><br />
+        <label
+          ><input type="radio" name="q5" value="Конечно же NaFretta" /> Конечно
+          же NaFretta</label
+        ><br />
+        <label
+          ><input type="radio" name="q5" value="Забегаловка" />
+          Забегаловка</label
+        ><br />
+      </div>
 
-.questionp {
-  margin: 10px 10px;
-  font-family: "Open Sans", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 600;
-  font-style: normal;
-  font-variation-settings: "wdth" 100;
-  color: white;
-  -webkit-text-stroke: 0.5px yellow;
-}
+      <button type="button" onclick="submitQuiz()">Показать результат</button>
+    </form>
 
-input {
-  margin: 3px 10px;
-}
+    <div id="result" style="margin-top: 20px"></div>
 
-a {
-  font-weight: bold;
-  color: yellow;
-  text-decoration: none;
-}
-
-input[type="radio"] {
-  appearance: none;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  width: 20px;
-  height: 20px;
-  border: 2px solid yellow;
-  border-radius: 50%;
-  outline: none;
-  cursor: pointer;
-}
-
-input[type="radio"]:checked {
-  background-color: yellow;
-}
-
-button {
-  background-color: transparent;
-
-  color: gold;
-  padding: 10px 20px;
-  border: none;
-  border-radius: 5px;
-  font-size: 16px;
-  cursor: pointer;
-}
-
-@keyframes blink {
-  0% {
-    border-color: yellow;
-  }
-  50% {
-    border-color: transparent;
-  }
-  100% {
-    border-color: yellow;
-  }
-}
-
-button {
-  border: 3px solid yellow;
-  border-radius: 16px;
-  margin-top: 5px;
-  animation: blink 2.3s infinite;
-}
+    <script src="./index.js"></script>
+  </body>
+</html>
