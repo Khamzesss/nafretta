@@ -26,4 +26,5 @@ function submitQuiz() {
     resultDiv.innerHTML +=
       '<a href="https://vk.com/im?sel=330843747"> Маа шаа Аллах1, у тебя получилось! Нажми на этот текст</a>';
   }
+  window.scrollTo(0,document.body.scrollHeight);
 }
