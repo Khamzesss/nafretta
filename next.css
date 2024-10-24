@@ -6,3 +6,30 @@ body {
 h1 {
   color: white;
 }
+
+.description img {
+  display: block;
+  margin: 0 auto;
+}
+/* Самая лучшая еда в мире */
+.pet {
+  font-size: 22px;
+  text-shadow: 1px 1px 2px yellow;
+  animation: color-change 2s infinite;
+}
+
+@keyframes color-change {
+  0% {
+    color: yellow;
+  }
+  50% {
+    color: #ffffff;
+  }
+  100% {
+    color: yellow;
+  }
+}
+
+#randomNumber {
+  font-size: 22px;
+}
