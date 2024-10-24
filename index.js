@@ -24,7 +24,7 @@ function submitQuiz() {
 
   if (score === totalQuestions) {
     resultDiv.innerHTML +=
-      '<a href="https://vk.com/im?sel=330843747"> Маа шаа Аллах1, у тебя получилось! Нажми на этот текст</a>';
+      '<a href="/next.html"> <button>Маа шаа Аллах1, у тебя получилось! </br> Нажми на этот текст</button> </a>';
   }
-  window.scrollTo(0,document.body.scrollHeight);
+  window.scrollTo(0, document.body.scrollHeight);
 }
