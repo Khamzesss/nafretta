@@ -1,18 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=DynaPuff:wdth@87.5&family=Open+Sans:wght@600&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Crimson+Text:wght@700&display=swap");
 
-@keyframes blink {
-  0% {
-    border-color: yellow;
-  }
-  50% {
-    border-color: transparent;
-  }
-  100% {
-    border-color: yellow;
-  }
-}
-
 .question {
   border: 3px solid yellow;
   border-radius: 16px;
@@ -56,6 +44,31 @@ input[type="radio"]:checked {
   background-color: yellow;
 }
 
+/* Button */
+
+@keyframes blink {
+  0% {
+    border-color: yellow;
+  }
+  50% {
+    border-color: transparent;
+  }
+  100% {
+    border-color: yellow;
+  }
+}
+@keyframes blinked {
+  0% {
+    border-color: rgb(0, 255, 38);
+  }
+  50% {
+    border-color: red;
+  }
+  100% {
+    border-color: yellow;
+  }
+}
+
 button {
   background-color: transparent;
 
@@ -69,6 +82,23 @@ button {
 
 button {
   border: 3px solid yellow;
+  border-radius: 16px;
+  margin-top: 5px;
+  animation: blinked 0.17s infinite;
+}
+
+.information {
+  background-color: transparent;
+
+  color: gold;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+.information {
+  border: 3px solid rgb(9, 255, 0);
   border-radius: 16px;
   margin-top: 5px;
   animation: blink 2.3s infinite;
