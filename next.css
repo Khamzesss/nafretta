@@ -9,9 +9,13 @@ h1 {
 }
 
 h2 {
-  font-family: Arial, sans-serif;
-  text-align: start;
+  font-family: "Open Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
   color: white;
+  -webkit-text-stroke: 0.5px yellow;
 }
 h3 {
   font-family: Arial, sans-serif;
