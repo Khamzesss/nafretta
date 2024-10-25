@@ -177,6 +177,10 @@ label {
   border-radius: 0 0 30px 30px;
   padding: 10px 0;
   width: 100%;
+  
+  border: 3px solid yellow;
+  animation: blink 2.3s infinite;
+  transform: translate(-3px);
 }
 
 .pet {
