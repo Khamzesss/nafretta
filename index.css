@@ -67,10 +67,10 @@ input[type="radio"]:checked {
     border-color: rgb(0, 255, 38);
   }
   50% {
-    border-color: red;
+    border-color: rgb(255, 255, 255);
   }
   100% {
-    border-color: yellow;
+    border-color: rgb(0, 255, 38);
   }
 }
 
@@ -89,7 +89,7 @@ button {
   border: 3px solid yellow;
   border-radius: 16px;
   margin-top: 5px;
-  animation: blinked 0.17s infinite;
+  animation: blinked 1.17s infinite;
 }
 
 .information {
@@ -177,7 +177,7 @@ label {
   border-radius: 0 0 30px 30px;
   padding: 10px 0;
   width: 100%;
-  
+
   border: 3px solid yellow;
   animation: blink 2.3s infinite;
   transform: translate(-3px);
@@ -198,3 +198,4 @@ label {
 form {
   margin-top: 250px;
 }
+/* Если ты зашел сюда и решил взять код, то я дарю его тебе. Хьанал хуьйла! */
